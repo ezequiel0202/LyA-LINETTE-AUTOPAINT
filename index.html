@@ -1,0 +1,381 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>L&amp;A Auto Paint - Fabricación de Pintura Automotriz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-error-container": "#ffdad6",
+                            "primary-fixed-dim": "#b2c5ff",
+                            "background": "#0b141f",
+                            "on-error": "#690005",
+                            "on-tertiary-container": "#4c1a00",
+                            "inverse-primary": "#0056d1",
+                            "secondary-fixed-dim": "#68d3ff",
+                            "secondary-fixed": "#bee9ff",
+                            "primary": "#b2c5ff",
+                            "on-surface": "#dbe3f3",
+                            "inverse-surface": "#dbe3f3",
+                            "surface-container-high": "#222a37",
+                            "outline": "#8c90a1",
+                            "surface-container-low": "#141c28",
+                            "surface-container-highest": "#2d3542",
+                            "tertiary-fixed": "#ffdbcc",
+                            "tertiary": "#ffb694",
+                            "surface-container-lowest": "#060f1a",
+                            "error": "#ffb4ab",
+                            "primary-container": "#5a8cff",
+                            "secondary-container": "#00c8fe",
+                            "on-background": "#dbe3f3",
+                            "tertiary-container": "#f26400",
+                            "on-surface-variant": "#c2c6d8",
+                            "on-secondary": "#003546",
+                            "surface-container": "#18202c",
+                            "on-secondary-fixed-variant": "#004d64",
+                            "error-container": "#93000a",
+                            "secondary": "#97deff",
+                            "outline-variant": "#424655",
+                            "surface": "#0b141f",
+                            "on-primary": "#002c72",
+                            "on-secondary-fixed": "#001f2a",
+                            "on-tertiary": "#571f00",
+                            "on-primary-container": "#002564",
+                            "tertiary-fixed-dim": "#ffb694",
+                            "inverse-on-surface": "#29313d",
+                            "primary-fixed": "#dae2ff",
+                            "on-tertiary-fixed-variant": "#7b2f00",
+                            "on-primary-fixed": "#001847",
+                            "on-secondary-container": "#005068",
+                            "on-tertiary-fixed": "#351000",
+                            "on-primary-fixed-variant": "#0040a0",
+                            "surface-dim": "#0b141f",
+                            "surface-bright": "#323a46",
+                            "surface-tint": "#b2c5ff",
+                            "surface-variant": "#2d3542"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                    },
+                    "spacing": {
+                            "gutter": "24px",
+                            "container-max": "1280px",
+                            "margin-mobile": "16px",
+                            "margin-desktop": "64px",
+                            "unit": "4px"
+                    },
+                    "fontFamily": {
+                            "title-lg": ["Plus Jakarta Sans"],
+                            "headline-md": ["Bebas Neue"],
+                            "label-md": ["Plus Jakarta Sans"],
+                            "display-lg": ["Bebas Neue"],
+                            "headline-lg": ["Bebas Neue"],
+                            "display-lg-mobile": ["Bebas Neue"],
+                            "body-md": ["Plus Jakarta Sans"],
+                            "caption": ["Plus Jakarta Sans"],
+                            "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                            "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "700"}],
+                            "headline-md": ["32px", {"lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                            "display-lg": ["72px", {"lineHeight": "72px", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                            "headline-lg": ["40px", {"lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                            "display-lg-mobile": ["48px", {"lineHeight": "48px", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #dbe3f3;
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 10px rgba(0, 200, 254, 0.8), 0 0 20px rgba(0, 200, 254, 0.4);
+        }
+        
+        .btn-primary {
+            background-color: #5a8cff;
+            color: #ffffff;
+            font-family: 'Bebas Neue', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 12px rgba(90, 140, 255, 0.3);
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 0 20px rgba(0, 200, 254, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.2);
+            filter: brightness(1.1);
+        }
+        
+        .btn-outline {
+            border: 1px solid #424655;
+            color: #dbe3f3;
+            font-family: 'Bebas Neue', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            border-color: #5a8cff;
+            box-shadow: inset 0 0 10px rgba(90, 140, 255, 0.2);
+        }
+        
+        .card-panel {
+            background-color: #0D1117;
+            border: 1px solid rgba(194, 198, 216, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .card-panel:hover {
+            border-color: #5a8cff;
+            transform: translateY(-4px);
+            box-shadow: 0 0 15px rgba(90, 140, 255, 0.2);
+        }
+        
+        .input-dark {
+            background-color: #050505;
+            border: 1px solid #424655;
+            color: #ffffff;
+        }
+        
+        .input-dark:focus {
+            border-color: #00c8fe;
+            box-shadow: 0 0 10px rgba(0, 200, 254, 0.3);
+            outline: none;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .pinstripe {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(194, 198, 216, 0.2), transparent);
+        }
+        
+        .neon-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #00c8fe, transparent);
+            box-shadow: 0 0 8px #00c8fe;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 12px rgba(90, 140, 255, 0.3); }
+            50% { box-shadow: 0 0 25px rgba(0, 200, 254, 0.8); }
+            100% { box-shadow: 0 0 12px rgba(90, 140, 255, 0.3); }
+        }
+        
+        .pulse-btn {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+<style>.btn-primary:hover { background-color: #FF8C1A !important; box-shadow: 0 0 20px rgba(255, 122, 0, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.2) !important; }</style></head>
+<body class="antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 transition-all duration-300 ease-in-out md:flex-nowrap bg-surface-container-lowest/80 border-b border-outline-variant/20 relative" style="backdrop-filter: blur(12px);"><div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-widest uppercase md:mr-8">L&amp;A AUTO PAINT</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative flex flex-col items-center justify-center w-full overflow-hidden pb-0 bg-black pt-4"><div class="w-full flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCEZP9170Kyb1ofVucmAQ9CLt-EEXr1NQbSjzHBIukimWrvwrC47XOa2jt3iFSIgxvaxrMeq0UJC64WNLtVdKNAcxzDVG-MSH0nMLJKvqyhxpPNVmeBuQO8hLr4GFwdgHmqSL_nOKgKieAOCAXYm7XB34fJQcJvMELcheONqC3jZVhnBfQc1bM2SsJ8_RkctZ_AELIwVy5Bi2h0uUiPosLM-SxDVJSNZmBuD3tvk8c1ARoCBNpcfZVIfikCGQzUUik" alt="L&amp;A Auto Paint" class="w-full h-auto max-h-[85vh] object-contain block mx-auto"></div></section><section class="py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest z-10" style="background: linear-gradient(rgb(11, 20, 31) 0%, rgb(6, 15, 26) 100%); padding-top: 2rem; padding-bottom: 3.5rem;">
+  <div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-center gap-6 fade-in visible">
+    <a href="#services" class="btn-primary px-8 py-4 rounded-lg text-title-lg flex items-center justify-center min-w-[200px] bg-[#FF7A00] hover:bg-[#FF8C1A] transition-all duration-300">
+      Ver Soluciones
+    </a>
+    <a href="#" class="btn-outline px-8 py-4 rounded-lg text-title-lg flex items-center justify-center min-w-[200px] border border-outline-variant/50 hover:border-primary transition-all duration-300">
+      Contáctanos
+    </a>
+  </div>
+</section>
+<!-- About Section -->
+<section class="py-12 px-margin-mobile md:px-margin-desktop relative z-10 bg-surface-container-lowest">
+  <div class="max-w-container-max mx-auto fade-in visible">
+    <div class="card-panel p-6 md:p-8 rounded-lg border border-outline-variant/20 bg-surface-container relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-container to-transparent opacity-75"></div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="flex items-center gap-4 text-center md:text-left">
+          <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center border border-outline-variant/30 text-secondary-container flex-shrink-0">
+            <span class="material-symbols-outlined text-3xl notranslate" translate="no">schedule</span>
+          </div>
+          <div>
+            <span class="text-secondary-container font-label-md tracking-wider uppercase text-xs font-semibold block mb-1">Visítanos en Fábrica &amp; Sucursal</span>
+            <h3 class="font-headline-md text-headline-md text-on-background uppercase tracking-wide">Horarios de Atención</h3>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full md:w-auto">
+          <div class="bg-surface-container-lowest/80 border border-outline-variant/20 rounded-lg p-4 text-center min-w-[160px]">
+            <span class="text-on-surface-variant font-label-md text-xs uppercase tracking-wider block mb-1">Lunes a Viernes</span>
+            <span class="text-primary font-title-lg font-bold text-base md:text-lg block">08:00 – 18:00</span>
+          </div>
+          <div class="bg-surface-container-lowest/80 border border-outline-variant/20 rounded-lg p-4 text-center min-w-[160px]">
+            <span class="text-on-surface-variant font-label-md text-xs uppercase tracking-wider block mb-1">Sábados</span>
+            <span class="text-primary font-title-lg font-bold text-base md:text-lg block">09:00 – 14:00</span>
+          </div>
+          <div class="bg-surface-container-lowest/80 border border-outline-variant/20 rounded-lg p-4 text-center min-w-[160px]">
+            <span class="text-on-surface-variant font-label-md text-xs uppercase tracking-wider block mb-1">Domingos</span>
+            <span class="text-outline font-title-lg font-bold text-base md:text-lg block">Cerrado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section class="px-margin-mobile md:px-margin-desktop bg-surface-container-lowest pb-24 pt-4" id="about">
+<div class="max-w-container-max mx-auto fade-in visible">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background uppercase mb-6 flex flex-col gap-2"><span class="block text-center">Precisión</span><span class="block text-center">de</span><span class="block text-center">Laboratorio</span></h2>
+
+<div class="neon-divider my-8 w-1/3"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="text-center p-6 card-panel rounded-lg md:col-span-2"><span class="material-symbols-outlined text-4xl text-secondary-container mb-6 block mx-auto notranslate" style="font-variation-settings: &quot;FILL&quot; 1;" translate="no">palette</span><h3 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary uppercase mb-6 text-center">Excelencia en Manufactura</h3><p class="font-body-lg text-body-lg text-on-surface-variant mt-4 text-center">Nuestros rigurosos procesos garantizan que cada lote de pintura cumpla con los estándares más altos de calidad y durabilidad, asegurando una aplicación perfecta en cada proyecto.</p></div>
+
+
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop relative" id="services">
+<div class="max-w-container-max mx-auto fade-in visible">
+<div class="text-center mb-16">
+<h2 class="font-title-lg text-headline-md md:text-headline-lg text-on-background uppercase tracking-wide">Nuestras Soluciones</h2>
+<div class="pinstripe w-24 mx-auto mt-4" style="background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Service 1 -->
+<div class="card-panel p-8 rounded-lg flex flex-col h-full group relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-container to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-3xl text-outline mb-6 group-hover:text-primary transition-colors notranslate" style="font-variation-settings: &quot;FILL&quot; 0;" translate="no">colorize</span>
+<h3 class="text-title-lg text-on-surface mb-4 font-title-lg">Igualación de Color Computarizada</h3>
+<p class="text-body-md text-on-surface-variant flex-grow mb-6 font-body-md">Precisión absoluta en el análisis espectrofotométrico para replicar cualquier tono de fábrica o desarrollar colores personalizados bajo demanda.</p>
+
+</div>
+<!-- Service 2 -->
+
+<!-- Service 3 -->
+
+<!-- Service 4 -->
+<div class="card-panel p-8 rounded-lg flex flex-col h-full group relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-container to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-3xl text-outline mb-6 group-hover:text-primary transition-colors notranslate" style="font-variation-settings: &quot;FILL&quot; 0;" translate="no">biotech</span>
+<h3 class="text-title-lg text-on-surface mb-4 font-title-lg">Pruebas de Calidad en Laboratorio</h3>
+<p class="text-body-md text-on-surface-variant flex-grow mb-6 font-body-md">Rigurosos controles de calidad, pruebas de intemperismo acelerado y resistencia química para garantizar el máximo estándar en cada lote.</p>
+
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="py-24 relative overflow-hidden bg-gradient-to-br from-[#0A0A0A] to-[#0D1F4A]">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10 fade-in visible">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background uppercase mb-8 tracking-wider">
+                ¿Listo para Formular el Color Perfecto?
+            </h2>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="font-headline-md text-headline-md text-primary uppercase tracking-wider">
+            L&amp;A Auto Paint
+        </div>
+
+<div class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+            © 2024 L&amp;A Auto Paint. Advanced Color Manufacturing.
+        </div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+<!-- Mobile Menu Overlay -->
+<script class="">
+    (function() {
+        const openBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu-btn');
+        const overlay = document.getElementById('mobile-menu-overlay');
+        const links = overlay.querySelectorAll('a');
+
+        const toggleMenu = (show) => {
+            if (show) {
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+                overlay.classList.add('opacity-100');
+                document.body.style.overflow = 'hidden';
+            } else {
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                overlay.classList.remove('opacity-100');
+                document.body.style.overflow = '';
+            }
+        };
+
+        openBtn?.addEventListener('click', () => toggleMenu(true));
+        closeBtn?.addEventListener('click', () => toggleMenu(false));
+        links.forEach(link => link.addEventListener('click', () => toggleMenu(false)));
+    })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
