@@ -1,0 +1,315 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Servicios - L&amp;A Auto Paint</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:opsz,wght@9..40,400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#323a46",
+                        "surface-container": "#18202c",
+                        "surface-variant": "#2d3542",
+                        "on-primary-fixed": "#001847",
+                        "surface-container-low": "#141c28",
+                        "on-surface": "#dbe3f3",
+                        "on-background": "#dbe3f3",
+                        "surface-dim": "#0b141f",
+                        "outline": "#8c90a1",
+                        "primary": "#b2c5ff",
+                        "on-primary-container": "#002564",
+                        "inverse-primary": "#0056d1",
+                        "on-secondary": "#003546",
+                        "outline-variant": "#424655",
+                        "error": "#ffb4ab",
+                        "secondary-fixed-dim": "#68d3ff",
+                        "inverse-on-surface": "#29313d",
+                        "on-tertiary": "#571f00",
+                        "inverse-surface": "#dbe3f3",
+                        "tertiary-fixed-dim": "#ffb694",
+                        "on-surface-variant": "#c2c6d8",
+                        "on-secondary-fixed": "#001f2a",
+                        "on-tertiary-container": "#4c1a00",
+                        "secondary": "#97deff",
+                        "on-primary-fixed-variant": "#0040a0",
+                        "error-container": "#93000a",
+                        "secondary-fixed": "#bee9ff",
+                        "surface-tint": "#b2c5ff",
+                        "secondary-container": "#00c8fe",
+                        "primary-container": "#5a8cff",
+                        "tertiary-fixed": "#ffdbcc",
+                        "tertiary": "#ffb694",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary-fixed-variant": "#004d64",
+                        "on-primary": "#002c72",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-secondary-container": "#005068",
+                        "on-tertiary-fixed-variant": "#7b2f00",
+                        "tertiary-container": "#f26400",
+                        "surface-container-lowest": "#060f1a",
+                        "surface": "#0b141f",
+                        "surface-container-highest": "#2d3542",
+                        "background": "#0b141f",
+                        "on-error": "#690005",
+                        "primary-fixed": "#dae2ff",
+                        "surface-container-high": "#222a37",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Bebas Neue"],
+                        "caption": ["DM Sans"],
+                        "title-lg": ["DM Sans"],
+                        "label-md": ["DM Sans"],
+                        "body-md": ["DM Sans"],
+                        "display-lg-mobile": ["Bebas Neue"],
+                        "body-lg": ["DM Sans"],
+                        "display-lg": ["Bebas Neue"],
+                        "headline-lg": ["Bebas Neue"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "48px", "letterSpacing": "0.05em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "72px", "letterSpacing": "0.05em", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-glow {
+            box-shadow: inset 0 0 10px rgba(0,200,254,0.1), 0 0 15px rgba(0,86,209,0.2);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 12px rgba(0,200,254,0.8);
+            filter: brightness(1.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col text-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container font-headline-md">
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[400px] md:h-[500px] flex items-center justify-center border-b border-outline-variant/20 overflow-hidden">
+<div class="absolute inset-0 bg-surface-container-lowest z-0">
+<!-- [VS CODE: EDITA TU IMAGEN AQUÍ] Imagen Principal Hero -->
+<img alt="Excelencia en Manufactura" class="w-full h-full object-cover opacity-30 mix-blend-luminosity" id="img-hero" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1dkos-CCMuGPP7eXE3-fKsnnKBe4EMfuHUuoOBKUhleuOp-XfvzzAV5WUTsXtLZjHBKefTRfi6XfS4uYkyerbOJz352atlB31AFPCTSxbMlNafQ8y0aaCguQuINp5iMyCPMOYhW2Y3uepv_KkW1AJux2Wq5QILPQ1EbS323TmmygYq1bJfW6BPigr9J13g3051vNeZ5Ah-4blmKF7tsQe9iG_lQyammJlppIr2ebyY9I92Lew7Ww">
+</div>
+<div class="relative z-10 text-center px-margin-mobile"><h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary uppercase mb-4 drop-shadow-[0_0_10px_rgba(178,197,255,0.5)]">Excelencia en retoques automotriz</h1><p class="text-body-lg text-on-surface max-w-2xl mx-auto font-headline-md">Elaboración de colores automotrices formulados, con una excelente terminación al ojo humano.</p></div>
+</section>
+<!-- Services Grid -->
+<section class="py-margin-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-16 text-center">
+<h2 class="font-headline-lg text-headline-lg text-secondary uppercase tracking-widest border-secondary inline-block">Nuestros Servicios</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- ========================================================================= -->
+<!-- TARJETA SERVICIO 1: FORMULACIÓN A GRANEL                                  -->
+<!-- ========================================================================= -->
+<div class="group relative bg-surface-container border border-outline-variant/20 rounded-lg overflow-hidden hover:border-primary hover:shadow-[0_0_15px_rgba(0,86,209,0.3)] transition-all duration-300 transform hover:-translate-y-1" data-service-card="servicio-1">
+<div class="relative overflow-hidden h-80 md:h-[400px]">
+<!-- [VS CODE: EDITA TU IMAGEN AQUÍ] Cuadro 1: Formulación a Granel -->
+<img alt="Formulación a Granel" class="lightbox-trigger w-full h-80 md:h-[400px] object-cover opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 cursor-pointer" data-editable-image="servicio-1" id="img-servicio-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADobUHmYTPImX0I2MEgvk2gjpE9wEaQtgn4LeFGIYUg4vqRmCPYn9z_j6XMhuDei34_4wKiMq6YmeeQyPoxvSNTRMigxYRe7HQRnZOygLtZX1ZtE2T0L8OuWU0LjBLzUbKW0wAmwq-FXESBXhzn9_CmH6IOjpvcD8_IrLFDaQQB6ZHoUB1FqBgB1AzfkC8nykw1RilEmc4qWAFbHJj_vnXLAAavx77YT0TnS0jkOjN3uwFN4V51gXOpIzzxS54mi7J">
+</div>
+<div class="relative py-4 bg-surface-container-lowest/80 backdrop-blur-sm text-center px-8">
+<div class="flex justify-center mb-3"><img src="https://lh3.googleusercontent.com/aida/AEtjO1WdznxAnxDUXoeSVAD9miok_lBoVaoxnVcPyGa2nf9VMxvqozleNtvDcdmq7vyAon-sg32E4pwGNkYm2cZxLLVJzqb_m2bHSqG8THVFKaIr-URKAU4LTAWczhqZJR-yW0iAhCEb5_ypchF35ZaonH5WKE8kgBN5Uj_I1K6ApIkhD5Wse6MNKq8Rm_iHM9r0-4fKHUCQfu8hqneuN8EbELF6SG4ByWN3JdJBwnveU-Jw9AxlnE8l4O_klA" alt="Pistola de pintura" class="w-9 h-9 object-contain mx-auto drop-shadow-[0_0_8px_rgba(56,189,248,0.6)]"></div>
+
+<p class="text-body-md text-on-surface-variant font-headline-md">CADA COLOR TIENE UN TOQUE ESPECIAL 100% GARANTIZADO</p>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- TARJETA SERVICIO 2: CONTROL QUÍMICO                                       -->
+<!-- ========================================================================= -->
+<div class="group relative bg-surface-container border border-outline-variant/20 rounded-lg overflow-hidden hover:border-primary hover:shadow-[0_0_15px_rgba(0,86,209,0.3)] transition-all duration-300 transform hover:-translate-y-1" data-service-card="servicio-2">
+<div class="relative overflow-hidden h-80 md:h-[400px]">
+<!-- [VS CODE: EDITA TU IMAGEN AQUÍ] Cuadro 2: Control Químico -->
+<img alt="Control Químico" class="lightbox-trigger w-full h-80 md:h-[400px] object-cover opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 cursor-pointer" data-editable-image="servicio-2" id="img-servicio-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Z0GCnWtD-Kq_jD5k6KBK91obAtTnC7GcfsOQo7lUUhU55co0qQdniGDG4wkchxy3SjoSrG_CFyRs0nUHtmKBwGGU54boiqi4NS2nDHY2YZg4iRiYy689wayCZBGM28Ub-Y3jwZZPk6U5MCPkPMkQHg45uTIw4W8gDNTkgt0N716y3HrjEIsElhyTw13hb-p_v_g4pHonaIm47bCFar2TlFZDW47dhITioDbfIOKxeVAoUTwlruvx89HcXd2wsVT5">
+</div>
+<div class="relative py-4 bg-surface-container-lowest/80 backdrop-blur-sm text-center px-8">
+<div class="flex justify-center mb-3"><img src="https://lh3.googleusercontent.com/aida/AEtjO1WdznxAnxDUXoeSVAD9miok_lBoVaoxnVcPyGa2nf9VMxvqozleNtvDcdmq7vyAon-sg32E4pwGNkYm2cZxLLVJzqb_m2bHSqG8THVFKaIr-URKAU4LTAWczhqZJR-yW0iAhCEb5_ypchF35ZaonH5WKE8kgBN5Uj_I1K6ApIkhD5Wse6MNKq8Rm_iHM9r0-4fKHUCQfu8hqneuN8EbELF6SG4ByWN3JdJBwnveU-Jw9AxlnE8l4O_klA" alt="Pistola de pintura" class="w-9 h-9 object-contain mx-auto drop-shadow-[0_0_8px_rgba(56,189,248,0.6)]"></div>
+
+<p class="text-body-md text-on-surface-variant font-headline-md">CADA COLOR TIENE UN TOQUE ESPECIAL 100% GARANTIZADO</p>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- TARJETA SERVICIO 3: SUMINISTRO DE PIGMENTOS                              -->
+<!-- ========================================================================= -->
+<div class="group relative bg-surface-container border border-outline-variant/20 rounded-lg overflow-hidden hover:border-primary hover:shadow-[0_0_15px_rgba(0,86,209,0.3)] transition-all duration-300 transform hover:-translate-y-1" data-service-card="servicio-3">
+<div class="relative overflow-hidden h-80 md:h-[400px]">
+<!-- [VS CODE: EDITA TU IMAGEN AQUÍ] Cuadro 3: Suministro de Pigmentos -->
+<img alt="Suministro de Pigmentos" class="lightbox-trigger w-full h-80 md:h-[400px] object-cover opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 cursor-pointer" data-editable-image="servicio-3" id="img-servicio-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8yJbfr9d-1P0BadRp1rG98Ti7zKhTcWUbTeOwZ71upnqTh3Rdsd5G0NuuPcjf6oo7TAEL2Pz5D5to9b3BPEj6iK-guqFw4Ancg5MFlVks5yfwpatVm2Ar4uKJ50wy18Xu7YQEbf3fHyPNcC1JyodKJh6COVOMpShWBbYpMg3a9-5tqLBUxwLvPR4zGtOpf1SLkavjzlgJcSUrBz11ONCwCbaPWccSrkuD8wIaIto1Numxw5jrGnftEw6ziVMvM_3d">
+</div>
+<div class="relative py-4 bg-surface-container-lowest/80 backdrop-blur-sm text-center px-8">
+<div class="flex justify-center mb-3"><img src="https://lh3.googleusercontent.com/aida/AEtjO1WdznxAnxDUXoeSVAD9miok_lBoVaoxnVcPyGa2nf9VMxvqozleNtvDcdmq7vyAon-sg32E4pwGNkYm2cZxLLVJzqb_m2bHSqG8THVFKaIr-URKAU4LTAWczhqZJR-yW0iAhCEb5_ypchF35ZaonH5WKE8kgBN5Uj_I1K6ApIkhD5Wse6MNKq8Rm_iHM9r0-4fKHUCQfu8hqneuN8EbELF6SG4ByWN3JdJBwnveU-Jw9AxlnE8l4O_klA" alt="Pistola de pintura" class="w-9 h-9 object-contain mx-auto drop-shadow-[0_0_8px_rgba(56,189,248,0.6)]"></div>
+
+<p class="text-body-md text-on-surface-variant font-headline-md">CADA COLOR TIENE UN TOQUE ESPECIAL 100% GARANTIZADO</p>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- TARJETA SERVICIO 4: I+D DE POLÍMEROS                                      -->
+<!-- ========================================================================= -->
+<div class="group relative bg-surface-container border border-outline-variant/20 rounded-lg overflow-hidden hover:border-primary hover:shadow-[0_0_15px_rgba(0,86,209,0.3)] transition-all duration-300 transform hover:-translate-y-1" data-service-card="servicio-4">
+<div class="relative overflow-hidden h-80 md:h-[400px]">
+<!-- [VS CODE: EDITA TU IMAGEN AQUÍ] Cuadro 4: I+D de Polímeros -->
+<img alt="I+D de Polímeros" class="lightbox-trigger w-full h-80 md:h-[400px] object-cover opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 cursor-pointer" data-editable-image="servicio-4" id="img-servicio-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdNpcGbFlND4A7fUveahTSlNVVkPF81dQG8JzZuODtzk-dFoeHuljadaaq7p9W-pFRK3qatdyrrSEnuhYiWLKRNWyzKfa2LL5U0NoXiTKpn3ZfrMcRs0DHUIPaEGly6DIcQwufe8cZI2-IC_oUm_gA-w85GYl6H9qfZcPg9rQ2Y_GelODvl-Ezjr8MyGtgpvubCaHA2yCR3tps_gsuTEFpLzxSVpgDRSK-i0cQhscShsunz6Kh16FTpMeES2POluT0">
+</div>
+<div class="relative py-4 bg-surface-container-lowest/80 backdrop-blur-sm text-center px-8">
+<div class="flex justify-center mb-3"><img src="https://lh3.googleusercontent.com/aida/AEtjO1WdznxAnxDUXoeSVAD9miok_lBoVaoxnVcPyGa2nf9VMxvqozleNtvDcdmq7vyAon-sg32E4pwGNkYm2cZxLLVJzqb_m2bHSqG8THVFKaIr-URKAU4LTAWczhqZJR-yW0iAhCEb5_ypchF35ZaonH5WKE8kgBN5Uj_I1K6ApIkhD5Wse6MNKq8Rm_iHM9r0-4fKHUCQfu8hqneuN8EbELF6SG4ByWN3JdJBwnveU-Jw9AxlnE8l4O_klA" alt="Pistola de pintura" class="w-9 h-9 object-contain mx-auto drop-shadow-[0_0_8px_rgba(56,189,248,0.6)]"></div>
+
+<p class="text-body-md text-on-surface-variant font-headline-md">CADA COLOR TIENE UN TOQUE ESPECIAL 100% GARANTIZADO</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="font-headline-md text-headline-md text-primary opacity-80 hover:opacity-100 transition-opacity uppercase tracking-wider">
+            L&amp;A Auto Paint
+        </div>
+<div class="text-body-md text-on-surface-variant text-sm text-center md:text-right font-headline-md"><a href="mailto:autopaintlalinette@gmail.com" class="hover:text-primary transition-colors">autopaintlalinette@gmail.com</a></div>
+</footer>
+<!-- Lightbox Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 transition-opacity duration-300 opacity-0 pointer-events-none" id="lightbox-modal">
+<button aria-label="Cerrar modal" class="absolute top-4 right-4 text-white hover:text-primary transition-colors p-2 z-50 focus:outline-none" id="lightbox-close">
+<span class="material-symbols-outlined text-4xl">close</span>
+</button>
+<img alt="Control Químico" class="max-h-[90vh] max-w-[90vw] object-contain transition-transform duration-300 rounded shadow-2xl scale-95" id="lightbox-img" src="">
+</div>
+<script>
+/* ==========================================================================
+   CONFIGURACIÓN DE IMÁGENES EN VISUAL STUDIO CODE
+   Para cambiar las imágenes en tu proyecto:
+   1. Guarda tus fotos en una carpeta (ej: "./img/foto1.jpg" o pon URLs web)
+   2. Modifica únicamente las rutas dentro de este objeto CONFIG_IMAGENES:
+   ========================================================================== */
+const CONFIG_IMAGENES = {
+  // Imagen principal del encabezado (Hero)
+  hero: "https://lh3.googleusercontent.com/aida-public/AB6AXuA1dkos-CCMuGPP7eXE3-fKsnnKBe4EMfuHUuoOBKUhleuOp-XfvzzAV5WUTsXtLZjHBKefTRfi6XfS4uYkyerbOJz352atlB31AFPCTSxbMlNafQ8y0aaCguQuINp5iMyCPMOYhW2Y3uepv_KkW1AJux2Wq5QILPQ1EbS323TmmygYq1bJfW6BPigr9J13g3051vNeZ5Ah-4blmKF7tsQe9iG_lQyammJlppIr2ebyY9I92Lew7Ww",
+  // Cuadro 1: Formulación a Granel
+  servicio1: "https://lh3.googleusercontent.com/aida-public/AB6AXuADobUHmYTPImX0I2MEgvk2gjpE9wEaQtgn4LeFGIYUg4vqRmCPYn9z_j6XMhuDei34_4wKiMq6YmeeQyPoxvSNTRMigxYRe7HQRnZOygLtZX1ZtE2T0L8OuWU0LjBLzUbKW0wAmwq-FXESBXhzn9_CmH6IOjpvcD8_IrLFDaQQB6ZHoUB1FqBgB1AzfkC8nykw1RilEmc4qWAFbHJj_vnXLAAavx77YT0TnS0jkOjN3uwFN4V51gXOpIzzxS54mi7J",
+  // Cuadro 2: Control Químico
+  servicio2: "https://lh3.googleusercontent.com/aida-public/AB6AXuB9Z0GCnWtD-Kq_jD5k6KBK91obAtTnC7GcfsOQo7lUUhU55co0qQdniGDG4wkchxy3SjoSrG_CFyRs0nUHtmKBwGGU54boiqi4NS2nDHY2YZg4iRiYy689wayCZBGM28Ub-Y3jwZZPk6U5MCPkPMkQHg45uTIw4W8gDNTkgt0N716y3HrjEIsElhyTw13hb-p_v_g4pHonaIm47bCFar2TlFZDW47dhITioDbfIOKxeVAoUTwlruvx89HcXd2wsVT5",
+  // Cuadro 3: Suministro de Pigmentos
+  servicio3: "https://lh3.googleusercontent.com/aida-public/AB6AXuARJmOLhAPhpZTsxfVt8guI-w11y_uaYkHTR50T6DsMQHZZqKKDRii8zYjudTP38YU4ZSaNJqwFbr7OH9okzYkTBP9UhTZiEZcMJABBMRf7eyWGJYUuUnVXdeShY8Wbj1nODPYXno2D53JgRXWg5x-bPwzogNY4CBW5OcwmJTbsqRxMtt5OB3C4ReHQqplHcTo032jiDBmeQn9LgF4PSMlSQUiNX8QwuxRNGomUZ61m5U66fl1gD067sAWUN8s2sVel",
+  // Cuadro 4: I+D de Polímeros
+  servicio4: "https://lh3.googleusercontent.com/aida-public/AB6AXuBdNpcGbFlND4A7fUveahTSlNVVkPF81dQG8JzZuODtzk-dFoeHuljadaaq7p9W-pFRK3qatdyrrSEnuhYiWLKRNWyzKfa2LL5U0NoXiTKpn3ZfrMcRs0DHUIPaEGly6DIcQwufe8cZI2-IC_oUm_gA-w85GYl6H9qfZcPg9rQ2Y_GelODvl-Ezjr8MyGtgpvubCaHA2yCR3tps_gsuTEFpLzxSVpgDRSK-i0cQhscShsunz6Kh16FTpMeES2POluT0"
+};
+
+// ==========================================================================
+// SINCRONIZACIÓN Y FUNCIONALIDAD INTERACTIVA
+// ==========================================================================
+window.addEventListener('DOMContentLoaded', () => {
+    // 1. Sincronizar fuentes desde CONFIG_IMAGENES hacia el HTML si se proporcionan
+    const mapIdToKey = {
+        'img-hero': 'hero',
+        'img-servicio-1': 'servicio1',
+        'img-servicio-2': 'servicio2',
+        'img-servicio-3': 'servicio3',
+        'img-servicio-4': 'servicio4'
+    };
+
+    Object.entries(mapIdToKey).forEach(([elementId, configKey]) => {
+        const el = document.getElementById(elementId);
+        if (el) {
+            // Si CONFIG_IMAGENES tiene un valor definido, actualiza la imagen
+            if (CONFIG_IMAGENES[configKey] && CONFIG_IMAGENES[configKey].trim() !== "") {
+                el.src = CONFIG_IMAGENES[configKey];
+            } else if (el.src) {
+                // Si el desarrollador editó directamente el HTML, sincronizamos de vuelta
+                CONFIG_IMAGENES[configKey] = el.src;
+            }
+        }
+    });
+
+    // 2. Lógica del Lightbox interactivo
+    const modal = document.getElementById('lightbox-modal');
+    const modalImg = document.getElementById('lightbox-img');
+    const lbCloseBtn = document.getElementById('lightbox-close');
+
+    function openLightbox(src, altText = '') {
+        if (!src) return;
+        modalImg.src = src;
+        modalImg.alt = altText;
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.classList.add('opacity-100');
+        modalImg.classList.remove('scale-95');
+        modalImg.classList.add('scale-100');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        modal.classList.remove('opacity-100');
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modalImg.classList.remove('scale-100');
+        modalImg.classList.add('scale-95');
+        document.body.style.overflow = '';
+        setTimeout(() => {
+            modalImg.src = '';
+        }, 200);
+    }
+
+    // Vincular todos los elementos con clase .lightbox-trigger
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            // Lee en tiempo real el src actual de la imagen (reflejando cualquier cambio en el DOM)
+            const currentSrc = trigger.getAttribute('src') || trigger.src;
+            const currentAlt = trigger.getAttribute('alt') || '';
+            openLightbox(currentSrc, currentAlt);
+        });
+    });
+
+    // Eventos de cierre: botón X, clic fuera y tecla Escape
+    if (lbCloseBtn) lbCloseBtn.addEventListener('click', closeLightbox);
+    
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeLightbox();
+            }
+        });
+    }
+
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('pointer-events-none')) {
+            closeLightbox();
+        }
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+</body></html>
